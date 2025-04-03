@@ -1,69 +1,65 @@
-Project: Scalable DevOps Pipeline for a Microservices Web Application
-1️⃣ Project Overview:
-Build and deploy a containerized microservices application using AWS, Docker, Kubernetes, Terraform, Jenkins, Prometheus, ELK Stack, and Security best practices.
+# Scalable DevOps Pipeline for a Microservices Web Application
 
-2️⃣ Tech Stack & Tools:
-Cloud: AWS (EC2, S3, RDS, IAM, VPC, Load Balancer, Route 53, CloudWatch, Lambda)
+## 1️⃣ Project Overview
+This project focuses on building and deploying a containerized microservices application using AWS, Docker, Kubernetes, Terraform, Jenkins, Prometheus, the ELK Stack, and security best practices.
 
-Version Control: GitHub (Branching, Pull Requests, Webhooks)
+## 2️⃣ Tech Stack & Tools
 
-CI/CD: Jenkins/GitHub Actions (Automated Builds, Tests, Deployments)
+### Cloud:
+- AWS (EC2, S3, RDS, IAM, VPC, Load Balancer, Route 53, CloudWatch, Lambda)
 
-Infrastructure as Code: Terraform (Provisioning AWS infrastructure)
+### Version Control:
+- GitHub (Branching, Pull Requests, Webhooks)
 
-Containerization: Docker (Packaging microservices)
+### CI/CD:
+- Jenkins/GitHub Actions (Automated Builds, Tests, Deployments)
 
-Orchestration: Kubernetes (EKS - Auto-scaling & Load Balancing)
+### Infrastructure as Code:
+- Terraform (Provisioning AWS infrastructure)
 
-Monitoring & Logging: Prometheus, Grafana, ELK Stack (ElasticSearch, Logstash, Kibana)
+### Containerization:
+- Docker (Packaging microservices)
 
-Security: AWS IAM, Security Groups, HashiCorp Vault (Secrets Management), SonarQube (Code Quality & Security Scanning)
+### Orchestration:
+- Kubernetes (EKS - Auto-scaling & Load Balancing)
 
-Scripting: Bash/Python (Automation tasks)
+### Monitoring & Logging:
+- Prometheus, Grafana, ELK Stack (ElasticSearch, Logstash, Kibana)
 
-3️⃣ Project Workflow:
-✅ Code Management:
+### Security:
+- AWS IAM, Security Groups, HashiCorp Vault (Secrets Management), SonarQube (Code Quality & Security Scanning)
 
-GitHub repository with a structured branching strategy (main/dev/feature branches)
+### Scripting:
+- Bash/Python (Automation tasks)
 
-Automated code quality & security checks using SonarQube
+## 3️⃣ Project Workflow
 
-✅ CI/CD Pipeline:
+### ✅ Code Management:
+- GitHub repository with a structured branching strategy (main/dev/feature branches)
+- Automated code quality & security checks using SonarQube
 
-Jenkins Pipeline (or GitHub Actions) for:
+### ✅ CI/CD Pipeline:
+- Jenkins Pipeline (or GitHub Actions) for:
+  - Automated build & unit tests
+  - Dockerizing the application
+  - Security scans with Trivy/Snyk
+  - Pushing images to DockerHub/ECR
+  - Deploying to Kubernetes (EKS)
 
-Automated build & unit tests
+### ✅ Infrastructure Automation:
+- Terraform to provision AWS infrastructure
+- Ansible for configuration management
 
-Dockerizing the application
+### ✅ Kubernetes Deployment:
+- Deploying microservices with Helm charts
+- Auto-scaling & Load Balancing using AWS ALB & Kubernetes HPA
 
-Security scans with Trivy/Snyk
+### ✅ Monitoring & Logging:
+- Prometheus & Grafana for real-time monitoring
+- ELK Stack for centralized logging & log analytics
 
-Pushing images to DockerHub/ECR
+### ✅ Security Best Practices:
+- AWS IAM roles & policies for least privilege access
+- HashiCorp Vault for managing sensitive credentials
+- SonarQube for code quality & vulnerability analysis
 
-Deploying to Kubernetes (EKS)
-
-✅ Infrastructure Automation:
-
-Terraform to provision AWS infrastructure
-
-Ansible for configuration management
-
-✅ Kubernetes Deployment:
-
-Deploying microservices with Helm charts
-
-Auto-scaling & Load Balancing using AWS ALB & Kubernetes HPA
-
-✅ Monitoring & Logging:
-
-Prometheus & Grafana for real-time monitoring
-
-ELK Stack for centralized logging & log analytics
-
-✅ Security Best Practices:
-
-AWS IAM roles & policies for least privilege access
-
-HashiCorp Vault for managing sensitive credentials
-
-SonarQube for code quality & vulnerability analysis
