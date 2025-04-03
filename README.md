@@ -1,65 +1,29 @@
-# Scalable DevOps Pipeline for a Microservices Web Application
+# Real-Time DevOps Pipeline 🚀
 
-## 1️⃣ Project Overview
-This project focuses on building and deploying a containerized microservices application using AWS, Docker, Kubernetes, Terraform, Jenkins, Prometheus, the ELK Stack, and security best practices.
+## Overview  
+This project implements an end-to-end DevOps pipeline with CI/CD, Infrastructure as Code, Kubernetes, and monitoring.
 
-## 2️⃣ Tech Stack & Tools
+## Tech Stack  
+- **Cloud:** AWS (EC2, S3, RDS, EKS)  
+- **CI/CD:** Jenkins, GitHub Actions  
+- **IaC:** Terraform  
+- **Containerization:** Docker, Kubernetes  
+- **Monitoring:** Prometheus, Grafana, ELK  
+- **Security:** AWS IAM, HashiCorp Vault, SonarQube  
 
-### Cloud:
-- AWS (EC2, S3, RDS, IAM, VPC, Load Balancer, Route 53, CloudWatch, Lambda)
+## Project Structure  
 
-### Version Control:
-- GitHub (Branching, Pull Requests, Webhooks)
 
-### CI/CD:
-- Jenkins/GitHub Actions (Automated Builds, Tests, Deployments)
+## Deployment Workflow  
+1. **Code push** → **CI/CD triggers builds**  
+2. **Docker images pushed to ECR/DockerHub**  
+3. **Terraform provisions AWS infrastructure**  
+4. **Kubernetes deploys application**  
+5. **Monitoring & logging activated**  
+6. **Security best practices applied**  
 
-### Infrastructure as Code:
-- Terraform (Provisioning AWS infrastructure)
-
-### Containerization:
-- Docker (Packaging microservices)
-
-### Orchestration:
-- Kubernetes (EKS - Auto-scaling & Load Balancing)
-
-### Monitoring & Logging:
-- Prometheus, Grafana, ELK Stack (ElasticSearch, Logstash, Kibana)
-
-### Security:
-- AWS IAM, Security Groups, HashiCorp Vault (Secrets Management), SonarQube (Code Quality & Security Scanning)
-
-### Scripting:
-- Bash/Python (Automation tasks)
-
-## 3️⃣ Project Workflow
-
-### ✅ Code Management:
-- GitHub repository with a structured branching strategy (main/dev/feature branches)
-- Automated code quality & security checks using SonarQube
-
-### ✅ CI/CD Pipeline:
-- Jenkins Pipeline (or GitHub Actions) for:
-  - Automated build & unit tests
-  - Dockerizing the application
-  - Security scans with Trivy/Snyk
-  - Pushing images to DockerHub/ECR
-  - Deploying to Kubernetes (EKS)
-
-### ✅ Infrastructure Automation:
-- Terraform to provision AWS infrastructure
-- Ansible for configuration management
-
-### ✅ Kubernetes Deployment:
-- Deploying microservices with Helm charts
-- Auto-scaling & Load Balancing using AWS ALB & Kubernetes HPA
-
-### ✅ Monitoring & Logging:
-- Prometheus & Grafana for real-time monitoring
-- ELK Stack for centralized logging & log analytics
-
-### ✅ Security Best Practices:
-- AWS IAM roles & policies for least privilege access
-- HashiCorp Vault for managing sensitive credentials
-- SonarQube for code quality & vulnerability analysis
-
+## How to Set Up  
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/your-username/realtime-devops-pipeline.git
+   cd realtime-devops-pipeline
